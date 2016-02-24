@@ -2,14 +2,15 @@
 *.lo
 *.la
 
+.libs/
 Makefile
 Makefile.fragments
 Makefile.global
 Makefile.objects
 acinclude.m4
 aclocal.m4
-/autom4te.cache/
-/build/
+autom4te.cache/
+build/
 config.guess
 config.h
 config.h.in
@@ -24,5 +25,5 @@ libtool
 ltmain.sh
 missing
 mkinstalldirs
-/modules/
+modules/
 run-tests.php
