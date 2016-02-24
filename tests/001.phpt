@@ -1,10 +1,10 @@
 --TEST--
-Check for string-case presence
+Check for stringcase presence
 --SKIPIF--
-<?php if (!extension_loaded("string-case")) print "skip"; ?>
+<?php if (!extension_loaded("stringcase")) print "skip"; ?>
 --FILE--
 <?php 
-echo "string-case extension is available";
+echo "stringcase extension is available";
 /*
 	you can add regression tests for your extension here
 
