@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("string-case", "for string-case support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("string-case", "enable string-case support", "no");
+
+if (PHP_STRING-CASE != "no") {
+	EXTENSION("string-case", "string-case.c");
+}
+
