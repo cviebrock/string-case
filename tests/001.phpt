@@ -18,4 +18,4 @@ echo "stringcase extension is available";
 */
 ?>
 --EXPECT--
-string-case extension is available
+stringcase extension is available
