@@ -13,9 +13,8 @@ dnl [  --with-stringcase             Include stringcase support])
 
 dnl Otherwise use enable:
 
-dnl PHP_ARG_ENABLE(stringcase, whether to enable stringcase support,
-dnl Make sure that the comment is aligned:
-dnl [  --enable-stringcase           Enable stringcase support])
+PHP_ARG_ENABLE(stringcase, whether to enable stringcase support,
+[  --enable-stringcase           Enable stringcase support])
 
 if test "$PHP_STRINGCASE" != "no"; then
   dnl Write more examples of tests here...

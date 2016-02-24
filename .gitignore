@@ -24,4 +24,5 @@ libtool
 ltmain.sh
 missing
 mkinstalldirs
+/modules/
 run-tests.php

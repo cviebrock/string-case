@@ -6,6 +6,7 @@
 #include "php.h"
 #include "php_ini.h"
 #include "ext/standard/info.h"
+#include "ext/standard/php_string.h"
 #include "php_stringcase.h"
 
 /* If you declare any globals in php_stringcase.h uncomment this:
@@ -159,14 +160,18 @@ PHP_FUNCTION(confirm_stringcase_compiled)
    Convert a value to studly caps case. */
 PHP_FUNCTION(studly_case)
 {
-	char *value = NULL;
+	char *value;
 	int argc = ZEND_NUM_ARGS();
 	int value_len;
 
 	if (zend_parse_parameters(argc TSRMLS_CC, "s", &value, &value_len) == FAILURE) 
 		return;
 
-	php_error(E_WARNING, "studly_case: not yet implemented");
+  value = estrndup(value, value_len);
+	php_strtolower(value, value_len);
+	RETURN_STRINGL(value, value_len, 0);
+
+	// php_error(E_WARNING, "studly_case: not yet implemented");
 }
 /* }}} */
 
